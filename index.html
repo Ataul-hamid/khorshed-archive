@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archived</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+
+
+</head>
+
+<body style="background-image: url('library.jpg'); ">
+
+    <h1 class="text-center ">Search Your Favorite Book</h1>
+
+    <!-- book search  -->
+
+    <div id="input-field" class="input-group mb-3 w-50 mx-auto">
+        <input id="search-field" type="text" class="form-control" placeholder="search your book"
+            aria-label="search your book" aria-describedby="button-addon2">
+        <button onclick="searchBook()" class="btn btn-outline-secondary" type="button"
+            id="button-search">search</button>
+    </div>
+
+
+
+
+    <!-- counting search  -->
+
+    <div id="counting">
+        <h1 id="counting-search" class="text-center"></h1>
+
+    </div>
+
+
+
+
+    <!-- book search result -->
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+
+
+    </div>
+
+    < <!-- error message -->
+
+        <div id="error" class="mb-3">
+            <h1 id="error-message" class="text-center text-danger">Result Not found</h1>
+
+        </div>
+
+        <script src="js/app.js"></script>
+
+</body>
+
+</html>
